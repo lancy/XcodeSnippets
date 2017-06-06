@@ -3,29 +3,48 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>@shared_instance</string>
+	<string>@setup_viewController</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (instancetype)shared&lt;#Instance#&gt; {
-    static id sharedInstance = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&amp;onceToken, ^{
-        sharedInstance = [[self alloc] init];
-    });
-    return sharedInstance;
+	<string>#pragma mark - Life Cycle
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
+
+#pragma mark - Setup
+
+- (void)setupUserInterface {
+    [self setupNavigationBar];
+    [self setupContentView];
+}
+
+- (void)setupNavigationBar {
+    self.titleLabel.text = @"&lt;#Title#&gt;";
+    [self.leftHeaderButton yfd_addTouchTarget:self action:@selector(returnButtonPressed:)];
+}
+
+- (void)setupContentView {
+
+}
+
+#pragma mark - Render
+
+- (void)renderContentView {
+
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CEA3E056-21E9-4752-B824-B0B4D8DEDEEF</string>
+	<string>B941C493-DF39-4115-A7D5-39F25AE18669</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Shared Instance</string>
+	<string>Setup ViewController</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
