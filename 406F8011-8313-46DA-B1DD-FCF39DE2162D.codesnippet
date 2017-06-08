@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>@p_nullable_dictionary</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassInterfaceMethods</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@property (nonatomic, strong, nullable) NSDictionary&lt;&lt;#key#&gt; *, &lt;#value#&gt; *&gt; *&lt;#name#&gt;;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>406F8011-8313-46DA-B1DD-FCF39DE2162D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Property Nullable Dictionary</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
